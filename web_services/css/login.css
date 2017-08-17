@@ -1,0 +1,40 @@
+body {
+    background-color: #94DBFF;
+    }
+    
+h1, h2, h3 {
+    text-align: center;
+    }    
+    
+td .button {
+    margin: 25px;
+    }  
+    
+table {
+    background-color: #EEF;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #009;
+    padding: 20px;
+    }   
+    
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px
+    }
+    
+.err_msg {
+    color: red;
+    }  
+    
+#status {
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    }        
+    
+       
+    
+      

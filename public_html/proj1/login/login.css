@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1.threed {
+   color: #615642;
+   text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+           0 3px 0 #777777, 0 4px 0 #666666,
+           0 5px 0 #555555, 0 6px 0 #444444,
+           0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+           0 9px 10px rgba(0, 0, 0, 0.2);
+}
+h2 { 
+	text-align: center; 
+   }
+
+   
+table {
+
+	margin: 25px auto 25px auto;
+	border:	2px solid black;
+	padding: 20px;
+	align:center;
+   	}   
+	
+body  {
+    background-image: url("book.gif");
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    min-height:100%;
+
+}
+	
+input {
+	font-size: 120%;
+	}
+	
+.button {
+
+	margin: 20px 25px 0 auto;
+	}		
+
+td .button {
+	float: right;
+	}
+	
+.error {
+	color: red;
+	font-weight: bold;
+	}

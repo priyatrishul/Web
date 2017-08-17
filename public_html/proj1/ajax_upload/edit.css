@@ -1,0 +1,39 @@
+#skuerror ,#info{
+color:red;
+font-size:12px;
+
+}
+body { background-color: #FFCC99; }
+
+#lout{
+margin-left:1200px;
+}
+
+img {
+    width: 300px;
+    height:300px;
+	float:right;
+}
+
+#busy_pic { width: 100px; display: block; margin: 0 auto 0 auto; } 
+
+h1 { text-align: center; }
+
+#status {
+    font-style: italic;
+    }
+	
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#nav {
+	border-style:groove;
+	margin-top:100px;
+    line-height:30px;
+    height:300px;
+    width:150px;
+    float:left;
+    padding:5px;	      
+}

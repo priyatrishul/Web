@@ -1,0 +1,21 @@
+use jadrn043;
+
+INSERT INTO vendor VALUES('','Mcgraw-Hill');
+INSERT INTO vendor VALUES('','Bloomsbury');
+INSERT INTO vendor VALUES('','DC Comics');
+INSERT INTO vendor VALUES('','Hachette Book Group');
+INSERT INTO vendor VALUES('','HarperCollins');
+INSERT INTO vendor VALUES('','Allen & Unwin');
+INSERT INTO vendor VALUES('','Knopf Doubleday');
+INSERT INTO vendor VALUES('','Penguin Group');
+INSERT INTO vendor VALUES('','Hodder & Stoughto');
+INSERT INTO vendor VALUES('','Marvel');
+
+INSERT INTO category VALUES('','Academic');
+INSERT INTO category VALUES('','Fiction');
+INSERT INTO category VALUES('','Autobiography');
+INSERT INTO category VALUES('','Comics');
+INSERT INTO category VALUES('','Romance');
+INSERT INTO category VALUES('','Mystery');
+INSERT INTO category VALUES('','Thriller');
+INSERT INTO category VALUES('','History');

@@ -1,0 +1,65 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+	Virupakshaiah,Padmapriya
+	Red Id:-818630469    
+	Account:  jadrn043
+    CS645, Spring 2015
+    Project #1
+-->
+
+<head>
+	<title>ADD Inventory</title>
+	<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="form_upload_ajax.css">
+  
+<script type="text/javascript" src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+<script type="text/javascript" src="ajax_get_lib.js"></script>
+<script type="text/javascript" src="form_upload_ajax.js"></script>  
+      	
+</head>
+<body>
+
+<div id="nav">
+<a href="/perl/jadrn043/proj1/page2.cgi"><span>Edit Inventory</span></a><br/>
+<a href="/perl/jadrn043/proj1/page3.cgi"><span>Delete Inventory</span></a><br/>
+<a href="/perl/jadrn043/proj1/logout.cgi">LogOut</a><br/>
+</div>
+<h1>Add New Inventory</h1>                                  
+<div id="section">
+<form method="post" 
+      enctype="multipart/form-data" 
+      name="myform"
+      action="">
+<p>
+SKU:<input type="text" name="sku" id="sku" /><br/>
+<p id="skuerror"></p>
+Vendor:<select name="vendor" id="vendor"></select><br/>
+Category:<select name="category" id="category"></select><br/>
+Vendor Model:<input type="text" name="vendor_model" id="vendor_model"/><br/>
+Description:<br><textarea name="description" id="description" maxlength="1000"></textarea><br/>
+Features:<br><textarea name="features" id="features" maxlength="500"></textarea><br />
+Cost:<input type="text" name="cost" id="cost"/><br /> <p id="costError"></p>
+Retail:<input type="text" name="retail" id="retail"/><br />
+Image to upload: <input type="file" name="product_image" id="product_image" />
+
+<p id="info"></p>
+</p>
+<p>     
+<input type="reset" value="Clear" />
+<input type="button" value="ADD" id="submit_button" />
+</p>
+</form>
+<div id="busyDiv">
+	<img id="busy_pic" src="busy_wait.gif" alt="busy wait icon" />
+</div>
+<h2 id="status"> </h2>
+<div id="pic"> </div>
+<h1 id="dbase"> </h1>
+</div>
+</body>
+</html>

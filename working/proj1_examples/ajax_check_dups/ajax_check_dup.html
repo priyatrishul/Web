@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>An AJAX example</title>
+    <link rel="stylesheet" href="ajax_check_dup.css">
+    <script src="/jquery/jquery.js"></script>
+    <script src="ajax_check_dup.js"></script>
+</head>
+<body>
+    <h1>SKU Validation Example (with vendor select)</h1>
+    <div id="main">
+    <form method="POST" action="/perl/jadrn000/echo.cgi">
+    	<table>
+		<tr>
+			<td>SKU:</td>
+			<td><input type="text" name="sku" size="15"></td>
+		</tr>
+		<tr>
+			<td>Vendor</td>
+			<td><select name="vendor">
+                            </select>
+                        </td>
+		</tr>
+		<tr>
+			<td><input type="reset" class="button"></td>
+			<td><input type="submit" value="Login" class="button"></td>
+		</tr>
+	</table>
+    </form>
+    <p id="message"></p>
+    </div>		
+</body>
+</html>

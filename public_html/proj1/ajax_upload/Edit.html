@@ -1,0 +1,67 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+	Virupakshaiah,Padmapriya
+	Red Id:-818630469    
+	Account:  jadrn043
+    CS645, Spring 2015
+    Project #1
+-->
+<head>
+	<title>Edit Inventory</title>
+	<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="edit.css">
+           
+<script type="text/javascript" src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+<script type="text/javascript" src="ajax_get_lib.js"></script>
+<script type="text/javascript" src="edit.js"></script>  
+      	
+</head>
+<body>
+<div id="nav">
+<a href="/perl/jadrn043/proj1/page1.cgi"><span>Add Inventory</span></a><br/>
+<a href="/perl/jadrn043/proj1/page3.cgi"><span>Delete Inventory</span></a><br/>
+<a href="/perl/jadrn043/proj1/logout.cgi">LogOut</a><br/>
+</div>
+
+<h1>Edit Inventory</h1>                                  
+<div id="section">
+<form method="post" 
+      enctype="multipart/form-data" 
+      name="myform"
+      action="">
+<p>
+
+SKU:<input type="text" name="sku" id="sku" />
+<p id="skuerror"></p>
+<input type="button" value="Search" id="sch_button" /><input type="reset" value="Clear SKU" id="clear_butn"/><br/>
+<br/>
+<label id="l1">Vendor:</label><select name="vendor" id="vendor"></select><br/>
+<label id="l2">Category:</label><select name="category" id="category"></select><br/>
+<label id="l3">Vendor Model:</label><input type="text" name="vendor_model" id="vendor_model"/><br/>
+<label id="l4">Description:</label><br><textarea name="description" id="description" maxlength="1000"></textarea><br/>
+<label id="l5">Features:</label><br><textarea name="features" id="features" maxlength="500"></textarea><br />
+<label id="l6">Cost:</label><input type="text" name="cost" id="cost"/><br /> <p id="costError"></p>
+<label id="l7">Retail:</label><input type="text" name="retail" id="retail"/><br />
+<label id="l8">Choose different Image :</label> <input type="file" name="product_image" id="product_image" />
+<p id="info"></p>
+</p>
+<img id="pic">
+<p>     
+<input type="button" value="Update" id="submit_button" />
+</p>
+</form>
+<div id="busyDiv">
+	<img id="busy_pic" src="busy_wait.gif" alt="busy wait icon" />
+</div>
+<h1 id="dbase"></h1>
+<div id="pic"></div>
+<h2 id="status"></h2>
+
+</div>
+</body>
+</html>

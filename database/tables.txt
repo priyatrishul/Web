@@ -1,0 +1,30 @@
+use jadrn043;
+
+DROP TABLE IF EXISTS merchandise_in;
+DROP TABLE IF EXISTS merchandise_out;
+DROP TABLE IF EXISTS on_hand;
+
+
+CREATE TABLE merchandise_in(
+	ID	INT		NOT NULL 	auto_increment,
+	sku	 CHAR(7) NOT NULL,
+	date  DATE,	
+	quantity INT,
+	PRIMARY KEY	(ID)
+	);
+	
+
+CREATE TABLE merchandise_out(
+	ID	INT		NOT NULL 	auto_increment,
+	sku	 CHAR(7) NOT NULL,
+	date  DATE,	
+	quantity INT,	
+	PRIMARY KEY	(ID)
+	);	
+	
+CREATE TABLE on_hand(
+	sku	 CHAR(7) NOT NULL,
+	last_date_modified  DATE,	
+	on_hand_quantity INT,	
+	PRIMARY KEY	(sku)
+	);	

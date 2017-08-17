@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>A file upload example</title>
+	<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+<style type="text/css">
+body { background-color: #CDE; }
+h1 { text-align: center; }
+input { margin: 5px; }
+#status {
+    font-style: italic;
+    }
+table { border-collapse: collapse; margin: auto; }
+td { border: 1px solid black; padding: 0 20px 0 20px; }
+img { width: 300px; } 
+#busyDiv { display: none; }
+#busy_pic { width: 100px; display: block; margin: 0 auto 0 auto; } 
+</style>            
+<script type="text/javascript" src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+<script type="text/javascript" src="ajax_get_lib.js"></script>
+<script type="text/javascript" src="form_upload_ajax.js"></script>  
+      	
+</head>
+<body>
+<h1>Form Example, with Image to Upload<br />Handled by AJAX<br />
+with Perl on the server-side</h1>
+<div>
+<form method="post" 
+      enctype="multipart/form-data" 
+      name="myform"
+      action="">
+<p>
+Location: <input type="text" name="location" id="location" /><br />
+Date: <input type="text" name="date" /><br />
+Photographer: <input type="text" name="photographer" /><br />
+Image to upload: <input type="file" name="product_image" id="product_image" />
+</p>
+<p>     
+<input type="reset" value="Clear" />
+<input type="button" value="Upload File" id="submit_button" />
+</p>
+</form>
+<div id="busyDiv">
+	<img id="busy_pic" src="busy_wait.gif" alt="busy wait icon" />
+</div>
+<h2 id="status"></h2>
+<div id="pic"></div>
+<h2 id="answer"></h2>
+</div>
+</body>
+</html>
